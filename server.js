@@ -10,6 +10,7 @@ const HOST = '0.0.0.0';
 const app = express()
 app.use('/ToDo', express.static('projects/ToDo'));
 app.use('/RPS', express.static('projects/RPS'));
+app.use('/PassGen', express.static('projects/Password-Generator'));
 
 app.listen(PORT,HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
